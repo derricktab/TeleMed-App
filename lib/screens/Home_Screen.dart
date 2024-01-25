@@ -21,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   List doctorsList = [
     {
-      "name": "Dr. Richard Ssemanda",
+      "name": "Dr. Richard Gatwa",
       "img": "doctor2.jpg",
       "title": "Dentist",
       "description": "Senior Dentist with over 4 years of experience",
