@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:medical_health_firebase/screens/Chat_screen.dart';
-import 'package:medical_health_firebase/screens/appointment_successful.dart';
+import 'package:medical_adviser/screens/Chat_screen.dart';
+import 'package:medical_adviser/screens/appointment_successful.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class AppointmentScreen extends StatelessWidget {

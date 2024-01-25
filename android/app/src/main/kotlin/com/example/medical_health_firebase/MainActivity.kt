@@ -1,4 +1,4 @@
-package com.example.medical_health_firebase
+package com.example.medical_adviser
 
 import io.flutter.embedding.android.FlutterFragmentActivity
 

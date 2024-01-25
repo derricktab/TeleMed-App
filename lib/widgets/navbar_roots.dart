@@ -2,10 +2,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'package:medical_health_firebase/screens/Home_Screen.dart';
-import 'package:medical_health_firebase/screens/messages_screen.dart';
-import 'package:medical_health_firebase/screens/schedule_screen.dart';
-import 'package:medical_health_firebase/screens/settings_screen.dart';
+import 'package:medical_adviser/screens/Home_Screen.dart';
+import 'package:medical_adviser/screens/messages_screen.dart';
+import 'package:medical_adviser/screens/schedule_screen.dart';
+import 'package:medical_adviser/screens/settings_screen.dart';
 
 class NavBarRoots extends StatefulWidget {
   final int selectedIndex;

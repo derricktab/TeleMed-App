@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:medical_health_firebase/screens/Home_Screen.dart';
-import 'package:medical_health_firebase/screens/custom_buttons.dart';
-import 'package:medical_health_firebase/screens/schedule_screen.dart';
-import 'package:medical_health_firebase/widgets/navbar_roots.dart';
+import 'package:medical_adviser/screens/Home_Screen.dart';
+import 'package:medical_adviser/screens/custom_buttons.dart';
+import 'package:medical_adviser/screens/schedule_screen.dart';
+import 'package:medical_adviser/widgets/navbar_roots.dart';
 
 class AppointmentSuccessful extends StatelessWidget {
   const AppointmentSuccessful({super.key});

@@ -4,7 +4,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:local_auth/local_auth.dart';
-import 'package:medical_health_firebase/screens/TouchFingerView.dart';
+import 'package:medical_adviser/screens/TouchFingerView.dart';
 
 import '../Data/constants.dart';
 import '../widgets/navbar_roots.dart';
@@ -43,12 +43,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
   Future<void> _getAuth() async {
     bool isAuth = false;
     try {
-      isAuth = await authentication.authenticate(
-          localizedReason: 'Scan your fingerprint',
-          options: const AuthenticationOptions(biometricOnly: true, stickyAuth: true));
+      isAuth = await authentication.authenticate(localizedReason: 'Scan your fingerprint', options: const AuthenticationOptions(biometricOnly: true, stickyAuth: true));
       if (isAuth) {
-        Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => NavBarRoots()));
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => NavBarRoots()));
       }
     } on PlatformException catch (e) {
       print(e);
@@ -88,18 +85,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     SizedBox(height: Get.height * .2),
                     const Text(
                       "Medical App",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 30,
-                          color: Colors.black),
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.black),
                     ),
                     const SizedBox(height: 50),
                     Text(
                       "Email",
-                      style: GoogleFonts.poppins(
-                          color: Colors.black,
-                          fontSize: 14,
-                          fontWeight: FontWeight.w400),
+                      style: GoogleFonts.poppins(color: Colors.black, fontSize: 14, fontWeight: FontWeight.w400),
                     ),
                     CustomTextField(
                       isPassword: false,
@@ -117,10 +108,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     const SizedBox(height: 20),
                     Text(
                       "Full Name",
-                      style: GoogleFonts.poppins(
-                          color: Colors.black,
-                          fontSize: 14,
-                          fontWeight: FontWeight.w400),
+                      style: GoogleFonts.poppins(color: Colors.black, fontSize: 14, fontWeight: FontWeight.w400),
                     ),
                     CustomTextField(
                       isPassword: false,
@@ -136,10 +124,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     const SizedBox(height: 20),
                     Text(
                       "Password",
-                      style: GoogleFonts.poppins(
-                          color: Colors.black,
-                          fontSize: 14,
-                          fontWeight: FontWeight.w400),
+                      style: GoogleFonts.poppins(color: Colors.black, fontSize: 14, fontWeight: FontWeight.w400),
                     ),
                     CustomTextField(
                       isPassword: true,
@@ -157,10 +142,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     const SizedBox(height: 20),
                     Text(
                       "Conform Password",
-                      style: GoogleFonts.poppins(
-                          color: Colors.black,
-                          fontSize: 14,
-                          fontWeight: FontWeight.w400),
+                      style: GoogleFonts.poppins(color: Colors.black, fontSize: 14, fontWeight: FontWeight.w400),
                     ),
                     CustomTextField(
                       isPassword: true,
@@ -179,17 +161,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     PrimaryButton(
                       onTap: () async {
                         if (_formKey.currentState!.validate()) {
-                          if (_passwordController.text ==
-                              _conformpasswordController.text) {
+                          if (_passwordController.text == _conformpasswordController.text) {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => TouchFingerView(),
                                 ));
                           } else {
-                            Fluttertoast.showToast(
-                                msg: "Password's doesn't match",
-                                backgroundColor: Colors.redAccent);
+                            Fluttertoast.showToast(msg: "Password's doesn't match", backgroundColor: Colors.redAccent);
                           }
                         }
                       },
@@ -209,8 +188,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             },
                             child: const Text(
                               "Login",
-                              style: TextStyle(
-                                  color: MyColors.kPrimaryColor, fontSize: 14),
+                              style: TextStyle(color: MyColors.kPrimaryColor, fontSize: 14),
                             ))
                       ],
                     ),

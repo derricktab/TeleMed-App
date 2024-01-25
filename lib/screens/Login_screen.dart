@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:medical_health_firebase/screens/social_button.dart';
-import 'package:medical_health_firebase/widgets/navbar_roots.dart';
+import 'package:medical_adviser/screens/social_button.dart';
+import 'package:medical_adviser/widgets/navbar_roots.dart';
 import 'bezier_card.dart';
 import 'custom_buttons.dart';
 import 'custom_textfield.dart';
@@ -67,11 +67,11 @@ class LoginScreen extends StatelessWidget {
                         child: RichText(
                           textAlign: TextAlign.center,
                           text: const TextSpan(
-                            text: 'Tele',
+                            text: 'Medical',
                             style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700, color: Color(0xffe46b10)),
                             children: [
                               TextSpan(
-                                text: 'Med',
+                                text: 'Adviser',
                                 style: TextStyle(color: Colors.black, fontSize: 30),
                               ),
                               TextSpan(

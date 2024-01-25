@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:1018514574484:android:4024db46af6e61b76a3881",
         "android_client_info": {
-          "package_name": "com.example.medical_health_firebase"
+          "package_name": "com.example.medical_adviser"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "1018514574484-qrsnl3q35g6qajusdehllqv6g611uoum.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.medical_health_firebase",
+            "package_name": "com.example.medical_adviser",
             "certificate_hash": "f9110ea8a50d2edb2c70b9a03bb90328ac43f03f"
           }
         },
