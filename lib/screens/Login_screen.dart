@@ -74,10 +74,6 @@ class LoginScreen extends StatelessWidget {
                                 text: 'Adviser',
                                 style: TextStyle(color: Colors.black, fontSize: 30),
                               ),
-                              TextSpan(
-                                text: ' App',
-                                style: TextStyle(color: Color(0xffe46b10), fontSize: 30),
-                              ),
                             ],
                           ),
                         ),
