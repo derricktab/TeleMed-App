@@ -12,19 +12,17 @@ class Items {
 List<Items> listOfItems = [
   Items(
     img: "assets/1.png",
-    title: "Discover the best medical school and job",
-    subTitle:
-    "There are 25.000+ best medical jobs and schools, choose your choice now",
+    title: "Discover the best doctors around you",
+    subTitle: "There are over 100 professional doctors partnering with us.",
   ),
   Items(
     img: "assets/2.png",
-    title: "Share your training\nprograms",
-    subTitle:
-    "There will be many people who\n want hear your stories and\n experiences",
+    title: "Get Medical Help at your home.",
+    subTitle: "This Tele Medical App help you to get Medical Help at the comfort of your home",
   ),
   Items(
     img: "assets/3.png",
-    title: "Find another doctor near\nyou",
-    subTitle: "Make your friendship and create a\nnew community",
+    title: "Find doctors around you",
+    subTitle: "Make your health a priority by getting the help you need",
   ),
 ];
