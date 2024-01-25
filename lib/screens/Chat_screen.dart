@@ -9,6 +9,7 @@ class ChatScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(70),
@@ -37,7 +38,7 @@ class ChatScreen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 5),
                   child: SizedBox(
-                    width: 170,
+                    width: width * 0.38,
                     child: Text(
                       name,
                       maxLines: 1,

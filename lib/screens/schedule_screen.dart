@@ -58,20 +58,16 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                       });
                     },
                     child: Container(
-                      padding:
-                          const EdgeInsets.symmetric(vertical: 10, horizontal: 18),
+                      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 18),
                       decoration: BoxDecoration(
-                        color: _buttonIndex == 0
-                            ? const Color(0xFF7165D6)
-                            : Colors.transparent,
+                        color: _buttonIndex == 0 ? const Color(0xFF7165D6) : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Text(
                         "Upcoming",
                         style: TextStyle(
                           fontWeight: FontWeight.w500,
-                          color:
-                              _buttonIndex == 0 ? Colors.white : Colors.black38,
+                          color: _buttonIndex == 0 ? Colors.white : Colors.black38,
                           fontSize: 16,
                         ),
                       ),
@@ -84,20 +80,16 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                       });
                     },
                     child: Container(
-                      padding:
-                          const EdgeInsets.symmetric(vertical: 10, horizontal: 18),
+                      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 18),
                       decoration: BoxDecoration(
-                        color: _buttonIndex == 1
-                            ? const Color(0xFF7165D6)
-                            : Colors.transparent,
+                        color: _buttonIndex == 1 ? const Color(0xFF7165D6) : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Text(
-                        "Complated",
+                        "Completed",
                         style: TextStyle(
                           fontWeight: FontWeight.w500,
-                          color:
-                              _buttonIndex == 1 ? Colors.white : Colors.black38,
+                          color: _buttonIndex == 1 ? Colors.white : Colors.black38,
                           fontSize: 16,
                         ),
                       ),
@@ -110,20 +102,16 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                       });
                     },
                     child: Container(
-                      padding:
-                          const EdgeInsets.symmetric(vertical: 10, horizontal: 18),
+                      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 18),
                       decoration: BoxDecoration(
-                        color: _buttonIndex == 2
-                            ? const Color(0xFF7165D6)
-                            : Colors.transparent,
+                        color: _buttonIndex == 2 ? const Color(0xFF7165D6) : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Text(
                         "Canceled",
                         style: TextStyle(
                           fontWeight: FontWeight.w500,
-                          color:
-                              _buttonIndex == 2 ? Colors.white : Colors.black38,
+                          color: _buttonIndex == 2 ? Colors.white : Colors.black38,
                           fontSize: 16,
                         ),
                       ),
